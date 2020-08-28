@@ -17,4 +17,4 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### Final Deployed Project
 
-You can look into final [Deployed Project](https://facebook.github.io/create-react-app/docs/deployment) here
+You can look into final [Deployed Project](https://fullthrottle-test-3404d.web.app/) here
