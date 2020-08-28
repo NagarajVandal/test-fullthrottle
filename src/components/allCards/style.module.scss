@@ -1,0 +1,18 @@
+@import "../../global.module.scss";
+
+.userText {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: $magenta;
+  text-align: center;
+  @include desktop {
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+}
+
+.cardContainer {
+  margin: 0 auto !important;
+}

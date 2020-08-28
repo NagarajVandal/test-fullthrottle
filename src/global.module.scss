@@ -1,0 +1,19 @@
+// colors
+$magenta: #f50c56;
+
+$mobile: 1024px;
+
+@mixin desktop {
+  @media screen and (min-width: $mobile) {
+    @content;
+  }
+}
+
+.textMagenta {
+  color: $magenta;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

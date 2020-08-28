@@ -1,0 +1,27 @@
+@import "../../global.module.scss";
+
+.desktopNavbar {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
+
+.mobileNavbar {
+  display: block;
+  @include desktop {
+    display: none;
+  }
+}
+.imgLogo {
+  width: 50%;
+  padding: 5px;
+  &:hover {
+    letter-spacing: 2px;
+    transition: all 2s;
+  }
+}
+
+.darkModeToggleDiv {
+  cursor: pointer;
+}
