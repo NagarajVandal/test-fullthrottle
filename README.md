@@ -4,11 +4,11 @@ In the project directory, you can run:
 
 ## Technologies Used
 
-###React <br />
-###SASS - CSS preprocessor<br />
-###MAterial UI - React Framework<br />
-###React-scheduler - Calendar<br />
-###Firebase -Deployment<br />
+### React <br />
+### SASS - CSS preprocessor<br />
+### MAterial UI - React Framework<br />
+### React-scheduler - Calendar<br />
+### Firebase -Deployment<br />
 
 ## AIM
 
