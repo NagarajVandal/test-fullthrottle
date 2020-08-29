@@ -1,6 +1,8 @@
 ## FullThrottle Labs Test
 
-In the project directory, you can run:
+
+## AIM
+Now, design and implement a user interface that allows a user to view a list of hardcoded users from a mock API server. On clicking on any user, a modal should open which displays all the time ranges during which they were active on that day, with an option to view all the periods of activity for different days using a calendar.
 
 ## Technologies Used
 
@@ -9,10 +11,6 @@ In the project directory, you can run:
 #### MAterial UI - React Framework<br />
 #### React-scheduler - Calendar<br />
 #### Firebase -Deployment<br />
-
-## AIM
-
-Now, design and implement a user interface that allows a user to view a list of hardcoded users from a mock API server. On clicking on any user, a modal should open which displays all the time ranges during which they were active on that day, with an option to view all the periods of activity for different days using a calendar.
 
 
 ## How to run it
@@ -23,5 +21,4 @@ Now, design and implement a user interface that allows a user to view a list of 
 
 
 ### Final Deployed Project
-
 You can look into final [Deployed Project](https://fullthrottle-test-3404d.web.app/) here
