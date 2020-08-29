@@ -1,16 +1,7 @@
 import React from "react";
-import IconButton from "@material-ui/core/IconButton";
-import HomeIcon from "@material-ui/icons/Home";
 import Brightness4Icon from "@material-ui/icons/Brightness4";
 import Brightness7Icon from "@material-ui/icons/Brightness7";
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Paper,
-  makeStyles,
-  Button,
-} from "@material-ui/core";
+import { AppBar, Toolbar, Paper, makeStyles, Button } from "@material-ui/core";
 import style from "./style.module.scss";
 import { Link } from "react-router-dom";
 import Logo from "../../assests/fullthrottle.png";

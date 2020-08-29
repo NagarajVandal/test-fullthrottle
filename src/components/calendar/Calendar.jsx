@@ -3,8 +3,6 @@ import Paper from "@material-ui/core/Paper";
 import { ViewState } from "@devexpress/dx-react-scheduler";
 import {
   Scheduler,
-  DayView,
-  MonthView,
   WeekView,
   Toolbar,
   DateNavigator,
@@ -21,7 +19,7 @@ const Calendar = ({ periods }) => {
     console.log(item.start_time);
     let startDateTime = new Date(item.start_time);
     let finalDateTime = new Date(item.end_time);
-    newData.push({
+    return newData.push({
       startDate: startDateTime.toISOString(),
       endDate: finalDateTime.toISOString(),
       title: "Active Hours ",

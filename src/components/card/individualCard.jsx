@@ -7,7 +7,7 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import boy from "../../assests/boy.svg";
 import ScheduleIcon from "@material-ui/icons/Schedule";
-import "./style.scss";
+import style from "./style.module.scss";
 import DetailsDialog from "../detailsDialog/detailsDialog";
 import CalendarDialog from "../calendar/CalenderDialog";
 
@@ -32,7 +32,6 @@ const useStyles = makeStyles({
 
 export default function SimpleCard({ data }) {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
   const [open, setOpen] = useState(false);
   const [calendarOpen, setCalendarOpen] = useState(false);
   const handleClickOpen = () => {
@@ -54,7 +53,7 @@ export default function SimpleCard({ data }) {
   return (
     <>
       <Card className={classes.root} elevation={24}>
-        <CardContent className="card-content">
+        <CardContent className={style.cardContent}>
           <img src={boy} alt="" />
           <Typography
             className={classes.title}
@@ -63,25 +62,25 @@ export default function SimpleCard({ data }) {
           >
             {data.real_name}
           </Typography>
-          <div className="timezome-div">
+          <div className={style.timezomeDiv}>
             <ScheduleIcon />
             <Typography className={classes.pos} color="textSecondary">
               {data.tz}
             </Typography>
           </div>
-          <div className="active-time">
-            <div className="active-days">
+          <div className={style.activeTime}>
+            <div className={style.activeDays}>
               <p>Active Days</p>
               <p>{data.activity_periods.length}</p>
             </div>
           </div>
         </CardContent>
-        <CardActions style={{ width: "90%", margin: "0 auto" }}>
+        <CardActions className={style.cardActionContainer} style={{}}>
           <Button
             size="small"
             variant="contained"
             color="secondary"
-            style={{ marginRight: "auto", fontSize: "11px" }}
+            className={style.actionBtn}
             onClick={handleClickOpen}
           >
             More Details
@@ -90,7 +89,7 @@ export default function SimpleCard({ data }) {
             size="small"
             variant="contained"
             color="secondary"
-            style={{ marginLeft: "auto", fontSize: "11px" }}
+            className={style.actionBtn}
             onClick={handleCalendarOpen}
           >
             View Calendar

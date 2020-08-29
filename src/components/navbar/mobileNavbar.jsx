@@ -6,18 +6,14 @@ import Brightness7Icon from "@material-ui/icons/Brightness7";
 import {
   AppBar,
   Toolbar,
-  Typography,
   Paper,
   makeStyles,
-  Button,
   Drawer,
   List,
   ListItem,
-  ListItemText,
 } from "@material-ui/core";
 import style from "./style.module.scss";
 import { Link } from "react-router-dom";
-import Logo from "../../assests/fullthrottle.png";
 
 const useStyles = makeStyles((theme) => ({
   list: {

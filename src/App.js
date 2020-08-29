@@ -5,22 +5,15 @@ import
   BrowserRouter as Router,
   Route,
 } from "react-router-dom";
-import SimpleTable from './components/timetable/table/Table';
 import CalendarData from './components/calendar/Calendar';
 import { ThemeProvider, Paper, createMuiTheme } from '@material-ui/core';
 import Navbar from './components/navbar';
 import AllCards from './components/allCards/allCards';
-import { grey } from '@material-ui/core/colors';
 
 
 function App()
 {
-
   const [darkMode, setDarkMode] = useState(true)
-
-
-
-
   const blackTheme = createMuiTheme({
     palette: {
       type: "dark",

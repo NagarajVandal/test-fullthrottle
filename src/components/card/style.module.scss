@@ -1,0 +1,35 @@
+.cardContent {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.cardActionContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+.timezomeDiv {
+  display: flex;
+}
+
+.activeTime {
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+
+  .activeDays > p:nth-child(1),
+  .activeHours > p:nth-child(1) {
+    font-weight: bold;
+  }
+}
+
+.memberInfo {
+  font-size: 14px;
+}
+
+.actionBtn {
+  margin-left: auto;
+  font-size: 11px;
+}
