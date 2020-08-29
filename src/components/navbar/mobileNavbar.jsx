@@ -13,14 +13,19 @@ import {
   ListItem,
 } from "@material-ui/core";
 import style from "./style.module.scss";
-import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   list: {
     width: 250,
+    display: "grid",
+    placeItems: "center",
+    height: "100%",
   },
   root: {
     flexGrow: 1,
+  },
+  listItem: {
+    width: "auto",
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -73,16 +78,20 @@ function MobileNavbar({ modeSwitch, darkMode }) {
 
       <Drawer anchor="right" open={open} onClose={toggleDrawer}>
         <List className={classes.list}>
-          <ListItem button>
-            <Link to="/">Test</Link>
+          <ListItem button className={classes.listItem}>
+            <a
+              href="https://github.com/NagarajVandal/test-fullthrottle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Test
+            </a>
           </ListItem>
-          <ListItem button>
+          <ListItem button className={classes.listItem}>
             <a href="https://github.com/NagarajVandal/NagarajVandal">Resume</a>
           </ListItem>
-          <ListItem button>
-            <a href="https://github.com/NagarajVandal/NagarajVandal">
-              About Me
-            </a>
+          <ListItem button className={classes.listItem}>
+            <a href="https://github.com/NagarajVandal">About Me</a>
           </ListItem>
         </List>
       </Drawer>
