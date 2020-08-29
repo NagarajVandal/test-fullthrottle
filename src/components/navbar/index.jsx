@@ -5,6 +5,8 @@ import { AppBar, Toolbar, Paper, makeStyles, Button } from "@material-ui/core";
 import style from "./style.module.scss";
 import { Link } from "react-router-dom";
 import Logo from "../../assests/fullthrottle.png";
+import Resume from "../../assests/NagarajResume.pdf";
+
 import MobileNavbar from "./mobileNavbar";
 
 const useStyles = makeStyles((theme) => ({
@@ -33,38 +35,36 @@ function Navbar({ modeSwitch, darkMode }) {
                 <img src={Logo} alt="" />
               </Link>
             </div>
-            <Link
-              to="/resume"
+            <Button
+              variant="outlined"
               style={{
-                margin: "0px 10px",
-                textDecoration: "none",
+                border: "none",
               }}
+              href="https://github.com/NagarajVandal/test-fullthrottle"
+              target="_blank"
             >
-              <Button
-                variant="outlined"
-                style={{
-                  border: "none",
-                }}
-              >
-                Test
-              </Button>
-              <Button
-                variant="outlined"
-                style={{
-                  border: "none",
-                }}
-              >
-                Resume
-              </Button>
-              <Button
-                variant="outlined"
-                style={{
-                  border: "none",
-                }}
-              >
-                About Me
-              </Button>
-            </Link>
+              Test
+            </Button>
+            <Button
+              variant="outlined"
+              style={{
+                border: "none",
+              }}
+              href={Resume}
+              target="_blank"
+            >
+              Resume
+            </Button>
+            <Button
+              variant="outlined"
+              style={{
+                border: "none",
+              }}
+              href="https://github.com/NagarajVandal"
+              target="_blank"
+            >
+              About Me
+            </Button>
 
             <div className={style.darkModeToggleDiv}>
               {darkMode ? (
