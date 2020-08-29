@@ -16,10 +16,10 @@ Now, design and implement a user interface that allows a user to view a list of 
 
 
 ## How to run it
- step 1 - git clone the project
- step 2 - npm install or yarn install 
- step 3 - npm start or yarn start
- step 4 - view the website at localhost with port number usually being 3000 , (http://localhost:3000/)
+ step 1 - git clone the project <br />
+ step 2 - npm install or yarn install  <br />
+ step 3 - npm start or yarn start <br />
+ step 4 - view the website at localhost with port number usually being 3000 , (http://localhost:3000/)<br />
 
 
 ### Final Deployed Project
